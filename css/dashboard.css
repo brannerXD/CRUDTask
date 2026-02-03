@@ -1,0 +1,80 @@
+body{
+    background-color: #f4f6fb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.sidebar{
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    padding: 20px;
+}
+
+.logo{
+    margin-bottom: 30px;
+}
+
+.menu{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.active{
+    background-color: #e7f1ff;
+    font-weight: bold;
+}
+
+.main-content{
+    margin-left: 270px;
+    padding: 30px;
+}
+
+.card-metric{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.number{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.table-admin{
+    background-color: white;
+}
+
+.badge-pending{
+    background-color: #ffeeba;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.badge-progress{
+    background-color: #b8daff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.badge-completed{
+    background-color: #c3e6cb;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 30px;
+    flex-direction: row;
+}

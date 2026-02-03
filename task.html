@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>My Tasks</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/task.css">
+  <link rel="icon" href="img/corbataxd.png" type="image/x-icon">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div>
+    <img class="icon" src="img/icon.png" alt="">
+    <h4 class="logo">CRUDZASO</h4>
+    </div>
+    <a href="dashboard.html" class="menu">Dashboard
+      <img class="icon" src="img/dashboard.png" alt="">
+    </a>
+    <a href="tasks.html" class="menu active">My Tasks
+      <img class="icon" src="img/checklist.png" alt="">
+    </a>
+    <a href="profile.html" class="menu">Profile
+      <img class="icon" src="img/user.png" alt="">
+    </a>
+  </div>
+
+  <div class="main-content">
+
+    <div class="header">
+      <h3>Task Management</h3>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#taskModal">
+        + New Task
+      </button>
+    </div>
+
+    <table class="table table-bordered table-tasks">
+      <thead>
+        <tr>
+          <th>Tittle</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="tasks"></tbody>
+    </table>
+
+    <button id="logout" class="btn btn-danger mt-3">Log Out</button>
+
+  </div>
+
+  <div class="modal fade" id="taskModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="taskForm">
+          <div class="modal-header">
+            <h5>New task</h5>
+          </div>
+          <div class="modal-body">
+            <input id="title" class="form-control" placeholder="Tittle" required>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/task.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
