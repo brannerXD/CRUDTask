@@ -7,7 +7,7 @@ if (!user || user.role !== "user") {
 }
 
 document.querySelector("#logout").addEventListener("click", logout);
-const API = "http://127.0.0.1:3000";
+const API = "http://localhost:3000 ";
 const container = document.querySelector("#tasks");
 
 async function loadTasks() {
